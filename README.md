@@ -29,7 +29,7 @@ To run the app, follow these steps.
   ```shell
   jspm install
   ```
-6. The code will run mutch faster once it is minified and bundled, execute the following command to do so (use unbundle to, um, unbundle):
+6. The code will run much faster once it is minified and bundled, execute the following command to do so (use unbundle to, um, unbundle):
 
   ```shell
   gulp bundle
