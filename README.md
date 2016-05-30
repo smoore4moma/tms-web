@@ -29,18 +29,9 @@ To run the app, follow these steps.
   ```shell
   jspm install
   ```
-6. To run the app, execute the following command:
-
-  ```shell
-  gulp watch
-  ```
-7. Browse to [http://localhost:9000](http://localhost:9000) to see the app. You can make changes in the code found under `src` and the browser should auto-refresh itself as you save files.
-
-  > Note: This app uses a new javascript release (ES 2016), so basically don't use IE.
-
-8. The code will run mutch faster once it is minified and bundled, execute the following command to do so (use unbundle to, um, unbundle):
+6. The code will run mutch faster once it is minified and bundled, execute the following command to do so (use unbundle to, um, unbundle):
 
   ```shell
   gulp bundle
   ```
-
+  > Note: This app uses a new javascript release (ES 2016), so basically don't use IE.
