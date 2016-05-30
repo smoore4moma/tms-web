@@ -1,0 +1,95 @@
+/*!
+ * Start Bootstrap - Logo Nav HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    background-color: lightgray;
+}
+
+#site-container{
+	width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    min-height: 850px;
+    margin-bottom: 20px;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+#header-title {
+    font-size:36px;
+    padding-left: 15px;
+    /* font-family: carbontyperegular; */
+ 
+}
+
+#header-title img {
+    padding-right: 15px;
+}
+
+.nav-glyphicon {
+    font-weight: bold;    
+}
+
+.glyphicon-margin {
+    margin-right: 10px;
+}
+  
+.search-panel{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.theme-background{
+    background-color:  #d6caa8 !important;
+}
+
+.theme-border{
+    border-color:  #d6caa8;
+} 
+
+.table-striped > tbody > tr:nth-child(2n) > td, .table-striped > tbody > tr:nth-child(2n) > th {
+   background-color: #f5f1ea;
+}
+
+.img-wrapper img {
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    vertical-align: middle;
+}
+
+.img-wrapper img:hover {
+    transform:scale(1.5);
+    -ms-transform:scale(1.5); /* IE 9 */
+    -moz-transform:scale(1.5); /* Firefox */
+    -webkit-transform:scale(1.5); /* Safari and Chrome */
+    -o-transform:scale(1.5); /* Opera */
+    transform-origin: right top;
+}
+
+.aurelia-validation-message{
+    display:inline;
+}
+
+.panel-title{
+    font-weight:bold;
+}
+
+/*
+
+@media(min-width:768px) {
+    body {
+        padding-top: 100px; 
+    }
+
+    .navbar-fixed-top .navbar-brand {
+        padding: 15px 0;
+    }
+}*/

@@ -1,3 +1,7 @@
+
+# Aurelia
+/dist
+
 # Logs
 logs
 *.log

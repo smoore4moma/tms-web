@@ -1,0 +1,115 @@
+<template>
+	<div class="container">
+		<br>
+		<div class="panel panel-default">
+			<div class="panel-heading theme-background"><h4>${item.title}</h4></div>
+			<div class="panel-body">
+				<div class="row">
+
+					<div class="col-lg-6">   
+
+
+						<table class="table table-striped">
+							<tr>
+								<td>Object Number:</td>
+								<td>${item.objectNumber}</td>
+							</tr>
+							<tr>
+								<td>Artist/creator:</td>
+								<td>${item.displayName}</td>
+							</tr>
+							<tr>
+								<td>Bio:</td>
+								<td>${item.displayDate}</td>
+							</tr>			
+							<tr>
+								<td>Title:</td>
+								<td>${item.title}</td>
+							</tr>		
+							<tr>
+								<td>Dated:</td>
+								<td>${item.dated}</td>
+							</tr>	
+							<tr>
+								<td>Medium:</td>
+								<td>${item.medium}</td>
+							</tr>
+							<tr>
+								<td>Dimensions:</td>
+								<td>${item.dimensions}</td>
+							</tr>	
+							<tr>
+								<td>Credit line:</td>
+								<td>${item.creditLine}</td>
+							</tr>
+							<tr>
+								<td>Department:</td>
+								<td>${item.department}</td>
+							</tr>
+                            <tr>
+                                <td>Exhibitions:</td>
+                                <td>
+                                
+                                <table>
+                                    <tr repeat.for="exhibition of item.exhibitions.exhibitions">
+                                        <td>
+                                            <a route-href="route:list-exhibitions; params.bind:{exhibitionID:exhibition.exhibitionID}">${exhibition.exhibitionTitle}</a>                                
+                                        </td>
+                                    </tr>
+                                </table>
+                                
+                                </td>
+                            </tr>	
+                            <tr>
+                                <td>Terms:</td>
+                                <td>
+
+                                    <table>
+                                        <tr repeat.for="term of item.terms.terms">
+                                            <td>
+                                                ${term.termType} :  ${term.term}
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                </td>
+                            </tr>		
+                            <tr>
+                                <td>Components:</td>
+                                <td>
+
+                                    <table>
+                                        <tr repeat.for="component of item.components.components">
+                                            <td>
+                                                ${component.componentNumber} : ${component.componentType}
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                </td>
+                            </tr>							
+
+						</table>
+
+					</div>
+
+					<div class="col-lg-6">   
+						<div class="img-wrapper">
+							<img src="${item.fullImage}" alt="${item.title}" class="img-responsive">
+						</div>
+					</div>		
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div>
+			<span><button type="submit" click.trigger="router.navigateBack()" class="btn btn-default">Back to List</button>&nbsp;<a route-href="route:search" class="btn btn-default">New Search</a></span>
+		</div>
+		<br>
+
+	</div>
+</template>
+

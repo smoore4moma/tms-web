@@ -1,0 +1,79 @@
+<template>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <p>&nbsp;</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="well well-lg" style="min-height: 600px;">
+                    <h1>Search</h1>
+                    
+                    <p>Combining <strong>more than one search term</strong> means using one of the methods below:</p>
+                    <p>You can use <strong>AND, OR,</strong> and <strong>NOT AND</strong> to refine your search.</p>
+                    <p>For example if you want art that is Dated "early 1907" then you would put in <em><strong>"early AND 1907"</strong></em>.</p>
+                    <p>Use OR to find one or the other.  For example, <em><strong>"Avignon OR Marseille"</strong></em> in a Title search.</p>
+                    <p>Use AND NOT to select one word but not the other.  For example, <em><strong>"Serra AND NOT Richard"</strong></em> in the Artist\Creator search box will return Daniel Serra-Badu&eacute;, but not Richard Serra.</p>
+                    <p>It is possible to change this so you do not need to use AND, OR, NOT OR. Change the SQL stored procedures to use FREETEXT instead of CONTAINS.</p>
+                    <p><strong>ALL SEARCHES RETURN JUST ONE OBJECT FOR THE DEMO!</strong></p>
+                </div>
+            </div>
+
+            <div class="col-lg-8">
+                <h3 style="margin-top: 0px;">tms-web</h3>
+                <hr>
+
+                <div class="panel panel-default search-panel theme-border">
+                    <div class="panel-heading theme-background">
+                        <h1 class="panel-title">Search Objects</h1>
+                    </div>
+                    <div class="panel-body">
+                        <form class="form-horizontal" submit.trigger="search()" validate.bind="validation">
+                            <div class="form-group">
+                                <label class="control-label col-lg-3" for="search_title">Title:</label>
+                                <div class="col-lg-9">
+                                    <input type="text" class="form-control" value.bind="searchTitle" id="search_title" placeholder="Title">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-lg-3" for="search_creator">Artist\Creator:</label>
+                                <div class="col-lg-9">
+                                    <input type="text" class="form-control" value.bind="searchCreator" id="search_creator" placeholder="Artist, creator, person">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-lg-3" for="search_dated">Dated:</label>
+                                <div class="col-lg-9">
+                                    <input type="text" class="form-control" value.bind="searchDated" id="search_dated" placeholder="Dated">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-lg-3" for="search_creditline">Credit Line:</label>
+                                <div class="col-lg-9">
+                                    <input type="text" class="form-control" value.bind="searchCreditline" id="search_creditline" placeholder="Credit line">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-lg-3" for="search_maidnumber">MoMA Number:</label>
+                                <div class="col-lg-9">
+                                    <input type="text" class="form-control" value.bind="searchNumber" id="search_maidnumber" placeholder="Accession numbers">
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-default" disabled.bind="validation.isValidating || !validation.result.isValid">Search</button>
+                        </form>
+                    </div>
+                </div>
+                <br />
+                <br />
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+
+</template>

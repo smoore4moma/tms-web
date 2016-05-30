@@ -1,0 +1,37 @@
+<template>
+
+<div id="site-container">
+
+<!-- Branding navbar -->
+<div class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <span id="header-title">Title of Your Project</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse" style="border-radius: 0">
+  <div class="container">
+    <ul class="nav navbar-nav">
+      <li repeat.for="row of router.navigation" class="${row.isActive ? 'active' : ''}">
+        <a href.bind="row.href">
+          <span class="${row.settings.glyph}"></span><span class="nav-glyphicon">${row.title}</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container" show.bind="router.isNavigating">
+  <i class="fa fa-spinner a-spin"></i>
+</div>
+
+<router-view></router-view>
+
+</div>
+
+</template>

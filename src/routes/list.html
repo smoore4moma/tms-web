@@ -1,0 +1,142 @@
+<template>
+<div class="container">
+
+
+    <div id="showTitles" style="display:${showTitles};">
+        <h4>Search results by Title (${titlesCount})</h4>
+        <table class="table table-condensed">
+            <tr class="theme-background">
+                <th class="col-md-2"></th>
+                <th class="col-md-2">Title</th>
+                <th class="col-md-2">Artist/Creator</th>
+                <th class="col-md-2">Dated</th>
+                <th class="col-md-2">Credit Line</th>
+                <th class="col-md-2" colspan="2">Object Number</th>
+            </tr>
+            <tr repeat.for="title of titles">
+                <td>
+                    <a route-href="route:detail; params.bind:{id:title.objectID}" class="btn btn-default"><img src="${title.thumbnail}"></a> 
+                </td>
+                <td>${title.title}</td>
+                <td>${title.displayName}</td>
+                <td>${title.dated}</td>
+                <td>${title.creditLine}</td>
+                <td>${title.objectNumber}</td>
+                <td>
+                    <a route-href="route:detail; params.bind:{id:title.objectID}" class="btn btn-default">Details</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="showArtists" style="display:${showCreators};">
+        <h4>Search results by Artist/Creator (${creatorsCount})</h4>
+        <table class="table table-condensed">
+            <tr class="theme-background">
+                <th class="col-md-2"></th>
+                <th class="col-md-2">Title</th>
+                <th class="col-md-2">Artist/Creator</th>
+                <th class="col-md-2">Dated</th>
+                <th class="col-md-2">Credit Line</th>
+                <th class="col-md-2" colspan="2">Object Number</th>
+            </tr>
+            <tr repeat.for="creator of creators">
+                <td>
+                    No image available.
+                </td>
+                <td>${creator.title}</td>
+                <td>${creator.displayName}</td>
+                <td>${creator.dated}</td>
+                <td>${creator.creditLine}</td>
+                <td>${creator.objectNumber}</td>
+                <td>
+                    <a route-href="route:detail; params.bind:{id:creator.objectID}" class="btn btn-default">Details</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="showDateds" style="display:${showDateds};">
+        <h4>Search results by Dated (${datedsCount})</h4>
+        <table class="table table-condensed">
+            <tr class="theme-background">
+                <th class="col-md-2"></th>
+                <th class="col-md-2">Title</th>
+                <th class="col-md-2">Artist/Creator</th>
+                <th class="col-md-2">Dated</th>
+                <th class="col-md-2">Credit Line</th>
+                <th class="col-md-2" colspan="2">Object Number</th>
+            </tr>
+            <tr repeat.for="dated of dateds">
+                <td>
+                    <a route-href="route:detail; params.bind:{id:dated.objectID}" class="btn btn-default"><img src="${dated.thumbnail}"></a> 
+                </td>
+                <td>${dated.title}</td>
+                <td>${dated.displayName}</td>
+                <td>${dated.dated}</td>
+                <td>${dated.creditLine}</td>
+                <td>${dated.objectNumber}</td>
+                <td>
+                    <a route-href="route:detail; params.bind:{id:dated.objectID}" class="btn btn-default">Details</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="showCreditlines" style="display:${showCreditlines};">
+        <h4>Search results by Credit Line (${creditlinesCount})</h4>
+        <table class="table table-condensed">
+            <tr class="theme-background">
+                <th class="col-md-2"></th>
+                <th class="col-md-2">Title</th>
+                <th class="col-md-2">Artist/Creator</th>
+                <th class="col-md-2">Dated</th>
+                <th class="col-md-2">Credit Line</th>
+                <th class="col-md-2" colspan="2">Object Number</th>
+            </tr>
+            <tr repeat.for="creditline of creditlines">
+                <td>
+                    <a route-href="route:detail; params.bind:{id:creditline.objectID}" class="btn btn-default"><img src="${creditline.thumbnail}"></a> 
+                </td>
+                <td>${creditline.title}</td>
+                <td>${creditline.displayName}</td>
+                <td>${creditline.dated}</td>
+                <td>${creditline.creditLine}</td>
+                <td>${creditline.objectNumber}</td>
+                <td>
+                    No image available for demo.
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="showNumbers" style="display:${showNumbers};">
+        <h4>Search results by MoMA Number (${numbersCount})</h4>
+        <table class="table table-condensed">
+            <tr class="theme-background">
+                <th class="col-md-2"></th>
+                <th class="col-md-2">Title</th>
+                <th class="col-md-2">Artist/Creator</th>
+                <th class="col-md-2">Dated</th>
+                <th class="col-md-2">Credit Line</th>
+                <th class="col-md-2" colspan="2">Object Number</th>
+            </tr>
+            <tr repeat.for="number of numbers">
+                <td>
+                    <a route-href="route:detail; params.bind:{id:number.objectID}" class="btn btn-default"><img src="${number.thumbnail}"></a> 
+                </td>
+                <td>${number.title}</td>
+                <td>${number.displayName}</td>
+                <td>${number.dated}</td>
+                <td>${number.creditLine}</td>
+                <td>${number.objectNumber}</td>
+                <td>
+                    <a route-href="route:detail; params.bind:{id:number.objectID}" class="btn btn-default">Details</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+</div>
+</template>
