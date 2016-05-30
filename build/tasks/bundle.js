@@ -4,10 +4,10 @@ var bundler = require('aurelia-bundler');
 
 var config = {
   force: true,
-  baseURL: '.',                   // baseURL of the application
-  configPath: './config.js',      // config.js file. Must be within `baseURL`
+  baseURL: '.',                   
+  configPath: './config.js',      
   bundles: {
-    "dist/app-build": {           // bundle name/path. Must be within `baseURL`. Final path is: `baseURL/dist/app-build.js`.
+    "dist/app-build": {          
       includes: [
         '[*.js]',
         '*.html!text',
@@ -36,9 +36,6 @@ var config = {
   }
 };
 
-//gulp.task('bundle', function() {
-//  return bundle(config);
-//});
 
 gulp.task('bundle', function() {  
  return bundler.bundle(config);
