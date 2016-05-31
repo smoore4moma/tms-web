@@ -6,7 +6,7 @@ import {HttpClient} from "aurelia-fetch-client"; //"aurelia-http-client";
 
 IMPORTANT: For demo purposes, the json from api calls is replaced with fixed files.
 View the GitHub project here: https://github.com/smoore4moma/tms-api for info on 
-creatring the web api against a TMS dtaabase.
+creating the web api against a TMS database.
 
 ANY search term will return the same json data!
 
