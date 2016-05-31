@@ -37,3 +37,11 @@ To run the app, follow these steps.
   gulp bundle
   ```
   > Note: This app uses a new javascript release (ES 2016), so basically don't use IE.
+
+## Screenshots
+
+[/#/search](/src/assets/images/placeholder1.jpg?raw=true "/#/search")
+
+[/#/list?searchNumber=1600.2001](/src/assets/images/placeholder2.jpg?raw=true "/#/list?searchNumber=1600.2001")
+
+[/#/detail/83696](/src/assets/images/placeholder3.jpg?raw=true "/#/detail/83696")
