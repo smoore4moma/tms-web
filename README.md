@@ -2,6 +2,8 @@
 
 > This is a web front-end to [tms-api](https://github.com/smoore4moma/tms-api), a REST api for The Museum System.  The architecture of this application is based on [Aurelia](http://aurelia.io), so it essentially an HTML5 app with no server-side code.  You do not need to install tms-api as static json files are included.  
 
+ALL SEARCHES RETURN JUST ONE OBJECT FOR THE DEMO!
+
 ## Running The App
 
 To run the app, follow these steps.
