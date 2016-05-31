@@ -40,8 +40,14 @@ To run the app, follow these steps.
 
 ## Screenshots
 
-[/#/search](/src/assets/images/placeholder1.jpg?raw=true "/#/search")
+/#/search
 
-[/#/list?searchNumber=1600.2001](/src/assets/images/placeholder2.jpg?raw=true "/#/list?searchNumber=1600.2001")
+<img src='https://github.com/smoore4moma/tms-web/blob/master/src/assets/images/screenshot1.jpg' />
 
-[/#/detail/83696](/src/assets/images/placeholder3.jpg?raw=true "/#/detail/83696")
+/#/list?searchNumber=1600.2001
+
+<img src='https://github.com/smoore4moma/tms-web/blob/master/src/assets/images/screenshot1.jpg' />
+
+/#/detail/83696
+
+<img src='https://github.com/smoore4moma/tms-web/blob/master/src/assets/images/screenshot1.jpg' />
