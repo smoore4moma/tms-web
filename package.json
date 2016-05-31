@@ -4,7 +4,6 @@
       "aurelia-bootstrapper": "npm:aurelia-bootstrapper@^1.0.0-beta.1.2.0",
       "aurelia-fetch-client": "npm:aurelia-fetch-client@^1.0.0-beta.1.2.1",
       "aurelia-framework": "npm:aurelia-framework@^1.0.0-beta.1.2.2",
-      "aurelia-http-client": "npm:aurelia-http-client@^1.0.0-beta.1.2.0",
       "aurelia-validation": "npm:aurelia-validation@^0.6.7",
       "bootstrap": "github:twbs/bootstrap@^3.3.6",
       "font-awesome": "npm:font-awesome@^4.6.1",
