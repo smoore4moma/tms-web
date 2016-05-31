@@ -46,8 +46,8 @@ To run the app, follow these steps.
 
 /#/list?searchNumber=1600.2001
 
-<img src='https://github.com/smoore4moma/tms-web/blob/master/src/assets/images/screenshot1.jpg' />
+<img src='https://github.com/smoore4moma/tms-web/blob/master/src/assets/images/screenshot2.jpg' />
 
 /#/detail/83696
 
-<img src='https://github.com/smoore4moma/tms-web/blob/master/src/assets/images/screenshot1.jpg' />
+<img src='https://github.com/smoore4moma/tms-web/blob/master/src/assets/images/screenshot3.jpg' />
